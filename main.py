@@ -1,16 +1,14 @@
 import random
 
 WELCOME_TEXT = "Welcome to the Number Guessing Game!\n" \
-    "I'm thinking of a number between 1 and 100.\n" \
-    "You have X chances to guess the correct number."
-
+    "I'm thinking of a number between 1 and 100."
+    
 DIFFICULTY_INTRUCTION = "Please select the difficulty level:\n" \
     "1. Easy (10 chances)\n" \
     "2. Medium (5 chances)\n" \
     "3. Hard (3 chances)\n"
     
-# RANDOM_NUMBER = random.randint(1, 100)
-RANDOM_NUMBER = 5
+RANDOM_NUMBER = random.randint(1, 100)
 
 def choose_difficulty() -> str:
     print(DIFFICULTY_INTRUCTION)
@@ -33,7 +31,9 @@ def play_game() -> None:
     difficulty = choose_difficulty()
     
     print(f"\nGreat! You have selected the {difficulty[0]} difficulty level.\n" \
-            "Let's start the game!")
+            f"You have {difficulty[1]} chances to guess the correct number.\n" \
+            "Let's start the game!"
+    )
     
     while True:
         if attempt_count >= difficulty[1]:
