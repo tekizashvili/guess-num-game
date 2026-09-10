@@ -15,3 +15,7 @@ python main.py
 ```
 
 Pick a difficulty (Easy, Medium or Hard), type your guesses, and follow the hints.
+
+---
+
+Project idea from [roadmap.sh](https://roadmap.sh/projects/number-guessing-game).
